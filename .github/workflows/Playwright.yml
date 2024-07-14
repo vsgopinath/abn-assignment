@@ -31,4 +31,5 @@ jobs:
           name: test-reports
           path: |
             e2e/results/
+            test-results/
           retention-days: 5
