@@ -41,7 +41,6 @@ Web automation testing using Playwright
 ### Playwright Directory
 
      All the tests files are under the `e2e` directory of the project
-
 * `e2e/helpers` - contains constant values
 * `e2e/pages/` - contains Page Object Model classes of the AUT
 * `specs` contains below files:
