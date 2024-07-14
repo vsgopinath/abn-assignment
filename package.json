@@ -1,0 +1,24 @@
+{
+  "name": "testautomation-web",
+  "version": "1.0.0",
+  "description": "We are looking for Automation Engineers that have the mindset \"only the sky is the limit\" and \"automation doesn't stop at testing, it's just a beginning!\" ;)",
+  "scripts": {
+    "test": "npx playwright test --config=e2e/playwright.config.ts",
+    "app": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "dotenv": "^16.4.5",
+    "monocart-reporter": "^2.6.1",
+    "playwright-lighthouse": "^4.0.0",
+    "typescript": "^5.5.3"
+  }
+}
