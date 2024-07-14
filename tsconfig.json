@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+      "types": ["axe-playwright"],
       "target": "ESNext",
       "module": "CommonJS",
       "strict": true,

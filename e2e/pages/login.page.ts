@@ -3,7 +3,7 @@ import { BasePage } from "./base.page";
 
 export class LoginPage extends BasePage {
 
-    private emailTextField: Locator;
+    emailTextField: Locator;
     private passwordTextField: Locator;
     private submitLoginButton: Locator;
 

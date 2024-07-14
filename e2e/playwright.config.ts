@@ -11,6 +11,7 @@ const config: PlaywrightTestConfig = {
     headless: isHeadless,
     screenshot: "only-on-failure",
     video: "retain-on-failure",
+    baseURL: 'http://localhost:3000'
   },
   reporter: [
     ["list", { printSteps: true }],
@@ -25,12 +26,25 @@ const config: PlaywrightTestConfig = {
   ],
   projects: [
     {
-      name: "firefox",
+      name: "UI Tests",
       use: {
-        browserName: "firefox",
-        baseURL: 'http://localhost:3000',
-        headless: isHeadless
+        browserName: "firefox"
       },
+      testMatch: 'login.spec.ts'
+    },
+    {
+      name: "Accessibility Tests",
+      use: {
+        browserName: "chromium",
+      },
+      testMatch: 'accessibility.spec.ts'
+    },
+    {
+      name: "Performance Tests",
+      use: {
+        browserName: "chromium",
+      },
+      testMatch: 'performance.spec.ts'
     },
   ],
   webServer: {
